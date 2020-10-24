@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.PrincipalInterfazObjetivosEstrategicosControler">
+     <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="30.0" prefWidth="373.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Objetivos Estrategicos Institucionales" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
+      <VBox fx:id="vBoxContenerdorPrincipalPerspectivas" layoutX="38.0" layoutY="84.0" spacing="50.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <HBox prefHeight="167.0" spacing="16.0">
+               <children>
+                  <AnchorPane prefHeight="128.0" prefWidth="115.0" rotate="2.0" style="-fx-background-color: #5b0067; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="106.0" prefWidth="87.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva Financiera" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox fx:id="hBox_finaciero" prefHeight="128.0" spacing="16.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="167.0" spacing="16.0">
+               <children>
+                  <AnchorPane prefHeight="128.0" prefWidth="115.0" rotate="-2.0" style="-fx-background-color: #009ABF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="106.0" prefWidth="87.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva Enfoque en el Usuario" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox fx:id="hBox_clientes" prefHeight="128.0" spacing="16.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="167.0" spacing="16.0">
+               <children>
+                  <AnchorPane prefHeight="128.0" prefWidth="115.0" rotate="2.0" style="-fx-background-color: #008548; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="106.0" prefWidth="87.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva de Procesos Internos" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox fx:id="hBox_ProcesosInternos" prefHeight="128.0" spacing="16.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="167.0" spacing="16.0">
+               <children>
+                  <AnchorPane prefHeight="140.0" prefWidth="115.0" rotate="-2.0" style="-fx-background-color: #C37D0E; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="106.0" prefWidth="72.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva de Aprendizaje y Crecimiento" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox fx:id="hBox_Aprendizaje_Conocimiento" prefHeight="128.0" spacing="16.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="jFXButton_agregar" layoutX="22.0" layoutY="62.0" prefHeight="42.0" prefWidth="197.0" style="-fx-background-color: #00C0EF;" text="Agregar" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="18" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      
+   </children>
+</AnchorPane>

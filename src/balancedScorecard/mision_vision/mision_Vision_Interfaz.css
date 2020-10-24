@@ -1,0 +1,90 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchorPaneModalNuevoPersonal{
+	-fx-background-color: #eeeeee;
+	-fx-background-radius:3;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.9), 15, 0, 3, 3);
+}
+/*
+#borderPaneNuevoPersonal{
+	-fx-background-color:   #626567  ;
+	 -fx-background-radius: 3 3 0 0;
+  	 -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.7), 2, 0, 0, 0);
+	
+}
+*/
+
+
+.labelInformacioncorrecto{
+	-fx-font-family: "Arial";
+	-fx-text-fill: #25b2f8;
+	 -fx-font-size: 17px;
+   	 -fx-font-weight: bold;
+	-fx-background-color: rgba(93, 194, 252 , 0.30);
+	-fx-background-radius: 3 3 3 3;
+	
+}
+
+
+.error {
+    -fx-focus-color: #d35244;
+    -fx-faint-focus-color: #d3524422;
+
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-color:
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+    -fx-prompt-text-fill: transparent;
+}
+
+.labelInformacionincorrecto{
+	-fx-font-family: "Arial";
+	 -fx-font-size: 17px;
+	 -fx-text-fill: #FF0000;
+   	 -fx-font-weight: bold;
+	-fx-background-color: rgba(250, 43, 43 , 0.30);
+	-fx-background-radius: 3 3 3 3;	
+}
+
+/*
+#buttonClose{
+	-fx-background-color:  #3aacff;
+	 -fx-font: 12px "Cambria";
+}*/
+
+#buttonClose:hover{
+	/*-fx-font: 15px "Cambria";*/
+	-fx-cursor: hand;
+	-fx-text-fill: #ff0000;
+}
+
+
+#buttonCancelar{
+	-fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+	-fx-background-color: f44336;
+	-fx-text-fill: #FFFFFF;
+	
+}
+
+#buttonCancelar:hover{
+		-fx-cursor: hand;
+		-fx-background-color: #da190b;
+}
+#buttonGuardar:hover{
+	-fx-cursor: hand; 
+	-fx-background-color: #0b7dda
+}
+#buttonGuardar{
+	-fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+	-fx-background-color: #2196F3;
+	-fx-text-fill: #FFFFFF;
+}

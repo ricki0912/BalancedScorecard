@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.metas.Meta_controler">
+   <children>
+      <AnchorPane id="anchorPaneModalNuevoPersonal" layoutX="12.0" layoutY="12.0" prefHeight="647.0" prefWidth="893.0" stylesheets="@indicadores_Interfaz.css">
+         <children>
+            <JFXTextField fx:id="jfxTextFieldFormula" labelFloat="true" maxWidth="555.0" minWidth="401.0" prefHeight="32.0" prefWidth="297.0" promptText="Especifique Formula que se utilizara para medir el Indicador ">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTabPane layoutX="211.0" layoutY="153.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab text="Metas">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1003.0" style="-fx-background-color: white;">
+                           <children>
+                              <AnchorPane layoutX="12.0" layoutY="385.0" prefHeight="158.0" prefWidth="336.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="19.0" prefWidth="327.0" text="Semaforo" textAlignment="CENTER" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="40.0" layoutY="22.0" prefHeight="130.0" prefWidth="256.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="40.0">
+                                       <children>
+                                          <Arc fx:id="ArcMetaAzul" fill="DODGERBLUE" layoutX="131.0" layoutY="122.0" length="180.0" radiusX="120.0" radiusY="120.0" startAngle="-0.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Arc fx:id="ArcMetaVerde" fill="#39c942" layoutX="131.0" layoutY="122.0" length="135.0" radiusX="120.0" radiusY="120.0" startAngle="45.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Arc fx:id="ArcMetaPrecaucion" fill="#e3ab10" layoutX="131.0" layoutY="122.0" length="90.0" radiusX="120.0" radiusY="120.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Arc fx:id="ArcMetaPeligro" fill="#ff0202" layoutX="131.0" layoutY="122.0" length="45.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="120.0" radiusY="120.0" startAngle="135.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Arc fill="WHITE" layoutX="131.0" layoutY="122.0" length="180.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="60.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Label fx:id="labelLogroAlcanzado" alignment="CENTER" layoutX="80.0" layoutY="74.0" prefHeight="37.0" prefWidth="101.0" text="123.0" textFill="#252525">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Arc fx:id="ArcFlechaIndicador" fill="#8a7490" layoutX="131.0" layoutY="122.0" length="2.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="115.0" radiusY="115.0" startAngle="71.0" stroke="#4c3361" strokeType="INSIDE" strokeWidth="2.0" type="ROUND" />
+                                          <Arc fill="#5c3086" layoutX="131.0" layoutY="122.0" length="360.0" radiusX="7.0" radiusY="7.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                          <Label fx:id="labelValorMaximo" layoutX="216.0" layoutY="103.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font></Label>
+                                          <Label fx:id="labelValorMinimoPeligro" layoutX="39.0" layoutY="103.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font></Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="105.0" prefWidth="737.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;">
+                                 <children>
+                                    <Label layoutX="9.0" layoutY="-1.0" prefHeight="19.0" prefWidth="333.0" text="Ingrese logros " textOverrun="CLIP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="jFXTextFieldVarCantidadEspecificaPor" layoutX="289.0" layoutY="18.0" prefHeight="25.0" prefWidth="153.0" promptText="Nombre de cantidad especifica" visible="false" />
+                                    <JFXTextField fx:id="jFXTextFieldVarCantidadTotalPor" layoutX="458.0" layoutY="18.0" prefHeight="25.0" prefWidth="218.0" promptText="Nombre de cantidad total" visible="false" />
+                                    <Line fx:id="lineDivision" endX="10.0" layoutX="453.0" layoutY="33.0" rotate="-70.0" startX="-13.0" strokeMiterLimit="3.0" visible="false" />
+                                    <JFXTextField fx:id="jFXTextFieldVarCantidadNumeroNum" layoutX="289.0" layoutY="19.0" prefHeight="25.0" prefWidth="386.0" promptText="Ingrese cantidad/numero" />
+                                    <JFXDatePicker fx:id="jFXDatePickerFechaLogro" layoutX="8.0" layoutY="19.0" prefHeight="25.0" prefWidth="260.0" promptText="Ingrese Fecha de Logro" />
+                                    <Label layoutX="10.0" layoutY="46.0" prefHeight="19.0" prefWidth="333.0" text="Linea de Tiempo" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="9.0" layoutY="85.0" text="Fecha Incial: ">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="507.0" layoutY="86.0" text="Fecha Final: ">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelFechaInicial" layoutX="76.0" layoutY="83.0" prefHeight="19.0" prefWidth="88.0" text="2018-12-12">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelFechaFinal" layoutX="571.0" layoutY="84.0" prefHeight="19.0" prefWidth="88.0" text="1212-12-12">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="630.0" layoutY="85.0" text="Meta:">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelFechaMeta" layoutX="665.0" layoutY="83.0" prefHeight="19.0" prefWidth="74.0" text="Label">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="308.0" layoutY="86.0" text="Avance">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelValorActual" layoutX="349.0" layoutY="83.0" prefHeight="19.0" prefWidth="85.0" text="Label">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="144.0" layoutY="86.0" text="Valor Incial">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelValorActualIncial" layoutX="208.0" layoutY="84.0" prefHeight="19.0" prefWidth="85.0" text="Label">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <ProgressBar fx:id="jfxProgressBarLineaTiempo" layoutX="10.0" layoutY="65.0" prefHeight="18.0" prefWidth="716.0" progress="0.52" />
+                                 </children>
+                              </AnchorPane>
+                              <Label id="labelInformacion" fx:id="labelInformacion" layoutX="14.0" layoutY="563.0" prefHeight="35.0" prefWidth="802.0">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="12.0" layoutY="129.0" prefHeight="250.0" prefWidth="339.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;">
+                                 <children>
+                                    <TableView fx:id="tableViewLogrosPorPeriodo" layoutY="28.0" prefHeight="220.0" prefWidth="336.0">
+                                      <columns>
+                                        <TableColumn fx:id="tableColumnNro" prefWidth="35.0" text="Nro" />
+                                        <TableColumn fx:id="tableColumnFecha" prefWidth="68.0" text="Fecha" />
+                                          <TableColumn fx:id="tableColumnLogroAlcanzadoPeriodoFraccion" prefWidth="74.0" text="L.A.P." />
+                                          <TableColumn fx:id="tableColumnLogroAlcanzadoPeriodo" prefWidth="60.0" text="L.A.P." />
+                                          <TableColumn fx:id="tableColumnLogroAlcanzado" prefWidth="66.0" text="L. A. A." />
+                                          <TableColumn fx:id="tableColumnOpciones" prefWidth="38.0" text="Opciones" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="4.0" layoutY="5.0" prefHeight="19.0" prefWidth="226.0" text="Logros alcanzados por periodo" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="357.0" layoutY="129.0" prefHeight="411.0" prefWidth="518.0">
+                                 <children>
+                                    <LineChart fx:id="lineChartLoggrosAlcanzados" prefHeight="423.0" prefWidth="519.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-background-radius: 3; -fx-border-radius: 3;">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </LineChart>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="756.0" layoutY="14.0" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #F9F9F9; -fx-border-color: #eeeeee; -fx-background-radius: 3; -fx-border-radius: 3;">
+                                 <children>
+                                    <Button id="buttonGuardar" fx:id="buttonGuardar" layoutX="25.0" layoutY="20.0" mnemonicParsing="false" text="Guardar">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button id="buttonCancelar" fx:id="buttonCancelar" layoutX="23.0" layoutY="66.0" mnemonicParsing="false" text="Cancelar">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <JFXButton fx:id="buttonClose" alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="4.0" text="." AnchorPane.rightAnchor="9.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="18" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

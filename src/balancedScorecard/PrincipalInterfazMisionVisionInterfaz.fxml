@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.PrincipalInterfazMisionVisionControler">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Misión y Visión" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
+      <HBox alignment="TOP_CENTER" layoutX="19.0" layoutY="80.0" prefHeight="614.0" prefWidth="1187.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <GridPane hgap="10.0" prefHeight="614.0" prefWidth="1187.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <AnchorPane prefHeight="134.0" prefWidth="278.0" style="-fx-background-color: #1ABB9C; -fx-border-radius: 0;">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="22.0" layoutY="19.0" prefHeight="97.0" prefWidth="234.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="Visión" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EFEFEF; -fx-border-radius: 2;">
+                           <children>
+                              <Label fx:id="labelMostrarVision" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="472.0" prefWidth="278.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="kjgjkhkljhkljhkljhkjlhkljhkljhjklhklhklhlkjhlkjhlkjhklj jkhkjlhkjhkj jh jklh jklh kl" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <Separator layoutY="364.0" prefHeight="4.0" prefWidth="289.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <HBox alignment="TOP_CENTER" layoutX="39.0" layoutY="372.0" prefHeight="49.0" prefWidth="278.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <JFXButton fx:id="jFXButtonEditarVision" alignment="CENTER" prefHeight="45.0" prefWidth="223.0" style="-fx-background-color: #337AB7; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 18;" text="Editar Visión" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1">
+                     <children>
+                        <AnchorPane prefHeight="134.0" prefWidth="278.0" style="-fx-background-color: #1ABB9C; -fx-border-radius: 0;">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="22.0" layoutY="19.0" prefHeight="97.0" prefWidth="234.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="Misión" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EFEFEF; -fx-border-radius: 2;">
+                           <children>
+                              <Label fx:id="labelMostrarMision" alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="472.0" prefWidth="278.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="kjgjkhkljhkljhkljhkjlhkljhkljhjklhklhklhlkjhlkjhlkjhklj jkhkjlhkjhkj jh jklh jklh kl" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <Separator layoutY="364.0" prefHeight="4.0" prefWidth="289.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <HBox alignment="TOP_CENTER" layoutX="39.0" layoutY="372.0" prefHeight="49.0" prefWidth="278.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <JFXButton fx:id="jFXButtonEditarMision" alignment="CENTER" prefHeight="45.0" prefWidth="223.0" style="-fx-background-color: #337AB7; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 18;" text="Editar Misión" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

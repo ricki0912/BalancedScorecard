@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/*
+  .btn {
+    border: none; /* Remove borders */
+/*    color: white; /* Add a text color */
+  /*  padding: 14px 28px; /* Add some padding */
+    /*cursor: pointer; /* Add a pointer cursor on mouse-over */
+/*}
+
+/*.success {background-color: #4CAF50;} /* Green */
+/*.success:hover {background-color: #46a049;}
+
+/*.info {background-color: #2196F3;} /* Blue */
+/*.info:hover {background: #0b7dda;}
+
+/*.warning {background-color: #ff9800;} /* Orange */
+/*.warning:hover {background: #e68a00;}
+
+/*.danger {background-color: #f44336;} /* Red */ 
+/*.danger:hover {background: #da190b;}
+
+/*.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+/*.default:hover {background: #ddd;}
+ */
+
+
+#borderPanelDatosUsuario{
+	-fx-background-color:  #7387A8;
+	 -fx-background-radius: 3 3 0 0;
+  	 -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.7), 2, 0, 1, 1);
+}
+
+#scrollPaneDatosUsuario{
+	 -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.5), 2, 0, 1, 1);
+	
+}
+
+#buttonModificar{
+	-fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+	-fx-background-color: #1080e5;
+	-fx-text-fill: #FFFFFF;
+}
+#buttonModificar:hover{
+	-fx-cursor:hand;
+	
+}

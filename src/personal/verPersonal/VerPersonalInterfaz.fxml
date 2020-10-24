@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="1029.0" stylesheets="@verPersonalInterfaz.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.verPersonal.VerPersonalControler">
+   <left>
+      <BorderPane prefHeight="369.0" prefWidth="203.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ScrollPane id="scrollPaneListaPersonal" fx:id="scrollPaneListaPersonal" fitToHeight="true" fitToWidth="true" prefHeight="284.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox id="vBoxButonesFoto" fx:id="vBoxButonesFoto" prefHeight="200.0" prefWidth="100.0" />
+                     </content>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <BorderPane id="borderPaneListaPersonal" prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <left>
+                        <Label text="Lista de Personal" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </left>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ScrollPane id="scrollPaneDatosPersonal" fx:id="scrollPaneDatosPersonal" fitToHeight="true" fitToWidth="true" prefHeight="488.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+               <content>
+                  <HBox id="hBoxDatosPersonal" fx:id="hBoxDatosPersonal" alignment="CENTER" prefHeight="509.0" prefWidth="711.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="557.0" prefWidth="543.0">
+                           <children>
+                              <AnchorPane prefHeight="522.0" prefWidth="543.0" style="-fx-border-color: ;">
+                        <children>
+                        <Label layoutX="37.0" layoutY="19.0" text="DNI">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                        <TextField id="textFieldDNI" fx:id="textFieldDNI" editable="false" layoutX="37.0" layoutY="41.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Label layoutX="39.0" layoutY="81.0" text="Nombre">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                        <TextField id="textFieldNombre" fx:id="textFieldNombre" layoutX="37.0" layoutY="104.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Label layoutX="37.0" layoutY="150.0" text="Apellido Paterno">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                        <TextField id="textFieldApellPaterno" fx:id="textFieldApellPaterno" layoutX="35.0" layoutY="171.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Label layoutX="37.0" layoutY="209.0" text="Apellido Materno">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                        <TextField id="textFieldApellMaterno" fx:id="textFieldApellMaterno" layoutX="35.0" layoutY="236.0" prefHeight="25.0" prefWidth="258.0" />
+                        <TextField id="textFieldCargo" fx:id="textFieldCargo" layoutX="37.0" layoutY="296.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Hyperlink id="hyperlinkSubirFoto" fx:id="hyperlinkSubirFoto" alignment="CENTER" contentDisplay="CENTER" layoutX="322.0" layoutY="236.0" prefHeight="23.0" prefWidth="178.0" text="Subir Foto" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Hyperlink>
+                        <Button id="ButtonEliminar" fx:id="ButtonEliminar" layoutX="425.0" layoutY="477.0" mnemonicParsing="false" text="Eliminar" />
+                        <Button id="ButtonModificar" fx:id="ButtonModificar" layoutX="341.0" layoutY="477.0" mnemonicParsing="false" text="Modificar" />
+                        <Label id="labelInformacion" fx:id="labelInformacion" layoutX="38.0" layoutY="455.0" prefHeight="17.0" prefWidth="467.0" />
+                        <Label layoutX="39.0" layoutY="270.0" text="Cargo">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                        <Label layoutX="325.0" layoutY="16.0" text="Foto">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                                    <CheckBox id="checkBoxEstado" fx:id="checkBoxEstado" layoutX="322.0" layoutY="300.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="179.0" text="Activo">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></CheckBox>
+                                    <ImageView id="imageViewFoto" fx:id="imageViewFoto" fitHeight="178.0" fitWidth="178.0" layoutX="322.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="328.0" layoutY="271.0" text="Estado">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="39.0" layoutY="334.0" text="Creado por">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Label>
+                                    <TextField id="textFieldCreadoPor" fx:id="textFieldCreadoPor" layoutX="37.0" layoutY="360.0" prefHeight="25.0" prefWidth="258.0" />
+                                    <Hyperlink id="hyperlinkRestablecerContrasena" fx:id="hyperlinkRestablecerContrasena" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="331.0" prefHeight="23.0" prefWidth="178.0" text="Restablecer Contraseña" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Hyperlink>
+                                    <TextField id="textFieldCreadoPor" fx:id="textFieldModificadoPor" layoutX="35.0" layoutY="423.0" prefHeight="25.0" prefWidth="258.0" />
+                                    <Label layoutX="37.0" layoutY="397.0" text="Modificado por">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="244.0" layoutY="502.0" />
+                        </children>
+                        </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <BorderPane id="borderPaneDatosPersonal" fx:id="borderPaneDatosPersonal" prefHeight="25.0" prefWidth="847.0" BorderPane.alignment="CENTER">
+               <left>
+                  <Label text="Datos de Personal" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </left>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane id="borderPaneContenedorBusqueda" fx:id="borderPaneContenedorBusqueda" prefHeight="47.0" prefWidth="1050.0" BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1050.0" spacing="2.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField id="textFieldBuscar" fx:id="textFieldBuscar" />
+                  <Button id="ButtonBuscar" fx:id="ButtonBuscar" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </center>
+      </BorderPane>
+   </top>
+</BorderPane>

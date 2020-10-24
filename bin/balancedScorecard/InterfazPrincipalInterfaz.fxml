@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="602.0" prefWidth="1360.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.InterfazPrincipalControler">
+   <children>
+      <JFXToolbar layoutX="184.0" layoutY="14.0" prefHeight="40.0" prefWidth="1360.0" style="-fx-min-height: 42; -fx-background-color: #222D32;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Label prefHeight="30.0" prefWidth="284.0" style="-fx-font-size: 20; -fx-text-fill: #7387A8; -fx-font-weight: bold;" text="BALANCED SCORECARD" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+         </left>
+         <right>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="jFXButtonInciarSesion" layoutX="148.0" layoutY="6.0" prefHeight="25.0" prefWidth="151.0" text="Iniciar Sesión" textFill="#7387a8" AnchorPane.rightAnchor="0.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="#7387a8" glyphName="USER" size="16" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <MenuButton fx:id="menuButtonIncicioSesion" mnemonicParsing="false" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: #222D32;" textFill="#0a0a0a" visible="false">
+                           <items>
+                              <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <AnchorPane prefHeight="131.0" prefWidth="154.0">
+                                       <children>
+                                          <Circle id="circleFotoPerfilGrande" fx:id="circleFotoPerfilGrande" fill="#1f93ff" layoutX="82.0" layoutY="66.0" radius="54.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <BorderPane prefHeight="19.0" prefWidth="154.0">
+                                       <center>
+                                          <Button id="buttonSalir" fx:id="buttonSalir" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Salir" BorderPane.alignment="CENTER">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </center>
+                                    </BorderPane>
+                                 </graphic>
+                              </MenuItem>
+                           </items>
+                           <graphic>
+                              <AnchorPane prefHeight="32.0" prefWidth="187.0">
+                                 <children>
+                                    <Circle id="CircleFotoPerfil" fx:id="CircleFotoPerfil" fill="DODGERBLUE" layoutX="29.0" layoutY="16.0" radius="18.0" strokeType="INSIDE">
+                                       <stroke>
+                                          <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startX="0.8999999999999999" startY="0.880952380952381">
+                                             <stops>
+                                                <Stop color="WHITE" />
+                                                <Stop color="#1088eb00" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </stroke>
+                                    </Circle>
+                                    <Label id="labelNombreUsuario" fx:id="labelNombreUsuario" layoutX="47.0" layoutY="1.0" prefHeight="17.0" prefWidth="90.0" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label id="labelCargoUsuario" fx:id="labelCargoUsuario" layoutX="47.0" layoutY="14.0" prefHeight="17.0" prefWidth="90.0" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </graphic>
+                        </MenuButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </right>
+      </JFXToolbar>
+      <VBox fx:id="vBoxMenu" layoutY="40.0" prefHeight="720.0" prefWidth="188.0" style="-fx-background-color: #2A3F54;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <AnchorPane prefHeight="108.0" prefWidth="188.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="imageViewLogoInstitucional" fitHeight="150.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <Hyperlink fx:id="hyperlinkEditarImagen" layoutX="105.0" layoutY="2.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" text="Editar Imagen" textFill="#a1aec4" visible="false" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Hyperlink>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="28.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="labelNombreInstitucional" prefHeight="46.0" prefWidth="189.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" text="MIDIS" />
+                  <Hyperlink fx:id="hyperlinkEditarNombre" layoutX="95.0" layoutY="3.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" text="Editar Nombre" textFill="#a1aec4" visible="false" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Hyperlink>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnPricing" layoutX="10.0" layoutY="67.0" onAction="#switchPricing" prefHeight="42.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="Misión y Visión " textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="INSTITUTION" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnMapaProcesos" prefHeight="0.0" prefWidth="189.0" style="-fx-alignment: left;" styleClass="nav-button" text="Mapa de Procesos" textFill="#a1aec4" visible="false">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="DASHBOARD" size="1" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnContacts" layoutX="10.0" layoutY="109.0" onAction="#switchContacts" prefHeight="42.0" prefWidth="222.0" style="-fx-alignment: left;" styleClass="nav-button" text="O. E. I." textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="LINE_CHART" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnWidgets" layoutX="10.0" layoutY="151.0" onAction="#switchWidget" prefHeight="42.0" prefWidth="238.0" style="-fx-alignment: left;" styleClass="nav-button" text="Acciones " textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="VIEW_GRID" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnProfile" layoutX="10.0" layoutY="193.0" onAction="#switchProfile" prefHeight="42.0" prefWidth="227.0" style="-fx-alignment: left;" styleClass="nav-button" text="Indicadores" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="DASHBOARD" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAlerts" layoutX="10.0" layoutY="235.0" onAction="#switchAlert" prefHeight="42.0" prefWidth="237.0" style="-fx-alignment: left;" styleClass="nav-button" text="Resultados" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="BAR_CHART" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnControls" onAction="#switchControls" prefHeight="0.0" prefWidth="189.0" style="-fx-alignment: left;" styleClass="nav-button" text="Metas" textFill="#a1aec4" visible="false">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUsuarios" onAction="#switchUsuarios" prefHeight="42.0" prefWidth="237.0" style="-fx-alignment: left;" styleClass="nav-button" text="Usuarios" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="GROUP" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPerfil" prefHeight="42.0" prefWidth="237.0" style="-fx-alignment: left;" styleClass="nav-button" text="Perfil" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="USER" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAcercaDe" prefHeight="42.0" prefWidth="237.0" style="-fx-alignment: left;" styleClass="nav-button" text="Acerca de" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="AT" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="186.0" layoutY="40.0" prefHeight="2121.0" prefWidth="1173.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane fx:id="holderPane" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="anchorPaneSemiTransparente" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0,0,0,0.5);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ProgressIndicator prefHeight="246.0" prefWidth="411.0" visible="false" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children></AnchorPane>
+      <JFXButton fx:id="jFXButtonSlideshow" layoutX="1049.0" layoutY="17.0" prefHeight="40.0" prefWidth="162.0" style="-fx-background-color: GREEN;" text="Slideshow" textFill="WHITE" visible="false" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="47.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SLIDERS" size="30" wrappingWidth="28.428571701049805" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

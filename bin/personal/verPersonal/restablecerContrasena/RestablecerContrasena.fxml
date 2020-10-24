@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.verPersonal.restablecerContrasena.RestablecerContrasenaControler">
+   <children>
+      <AnchorPane id="anchorPaneModalNuevoPersonal" layoutX="3.0" layoutY="22.0" prefHeight="333.0" prefWidth="344.0" stylesheets="@restablecerContrasena.css">
+   <children>
+      <Label layoutX="43.0" layoutY="55.0" text="DNI de Usuario">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+      <Label layoutX="45.0" layoutY="117.0" text="Nueva Contraseña">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+      <Label layoutX="43.0" layoutY="184.0" text="Repetir Nueva Contraseña">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+      <Button id="buttonGuardar" fx:id="buttonGuardar" layoutX="227.0" layoutY="263.0" mnemonicParsing="false" text="Guardar">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Button>
+      <Button id="buttonCancelar" fx:id="buttonCancelar" layoutX="137.0" layoutY="263.0" mnemonicParsing="false" text="Cancelar">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Button>
+      <Label id="labelInformacion" fx:id="labelInformacion" layoutX="41.0" layoutY="238.0" prefHeight="17.0" prefWidth="258.0" textFill="#e80000">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <BorderPane id="borderPaneNuevoPersonal" fx:id="borderPaneNuevoPersonal" layoutX="146.0" layoutY="14.0" prefHeight="28.0" prefWidth="536.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+            <Label text="Restablecer Contraseña" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </left>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <right>
+            <Button id="buttonClose" fx:id="buttonClose" mnemonicParsing="false" prefHeight="10.0" prefWidth="24.0" text="X" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Button>
+               </right>
+            </BorderPane>
+            <PasswordField id="passwordFieldNuevaContrasena" fx:id="passwordFieldNuevaContrasena" layoutX="41.0" layoutY="136.0" prefHeight="25.0" prefWidth="258.0" />
+            <PasswordField id="passwordFieldRepetirNuevaContrasena" fx:id="passwordFieldRepetirNuevaContrasena" layoutX="41.0" layoutY="205.0" prefHeight="25.0" prefWidth="258.0" />
+            <TextField id="textFieldDniUsuario" fx:id="textFieldDniUsuario" editable="false" layoutX="40.0" layoutY="75.0" prefHeight="25.0" prefWidth="258.0" />
+   </children>
+</AnchorPane>
+   </children>
+</Group>

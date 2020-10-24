@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="172.0" prefWidth="277.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchorPanePerspectiva" layoutY="21.0" prefHeight="27.0" prefWidth="277.0" style="-fx-background-color: #009ABF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <left>
+                  <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="labelPerspectiva" style="-fx-text-fill: #F0F0F0; -fx-font-weight: bold; -fx-font-size: 16;" text="Perspectiva Finaciera" />
+                     </children>
+                  </HBox>
+               </left>
+               <right>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="55.0" spacing="2.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton fx:id="jFXButtonEditar" alignment="CENTER" contentDisplay="CENTER" lineSpacing="2.0" text="." textFill="#ffffff00">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="16" text="" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="jFXButtonEliminar" alignment="CENTER" contentDisplay="CENTER" text="." textFill="#ffffff00">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="16" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelObjetivoEstrategico" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="79.0" style="-fx-text-fill: black;" text="jjajdfalksjflaksdjfladsjfl fj aslk jj lkafj añkl lañk   kldsajf lak añdfj ñ ñlaslkdfj ñ ñlasfdk j  slfñadj ñ  ñsdfj   añlldkfj   ñladfj " textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="27.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="5.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label fx:id="labelPeligro" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-background-color: #ff0202;" text="99" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Peligro! Tome medidas. " />
+                     </tooltip>
+                  </Label>
+                  <Label fx:id="labelPrecaucion" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-background-color: #e3ab10;" text="99" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Precaución. Tenga :)" />
+                     </tooltip>
+                  </Label>
+                  <Label fx:id="labelMeta" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-background-color: #39c942;" text="99" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Bien! Cumpliste la meta. " />
+                     </tooltip>
+                  </Label>
+                  <Label fx:id="labelMetaSuperada" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-background-color: #1e90ff;" text="99" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Felicitaciones!! :D Ha superado la meta." />
+                     </tooltip>
+                  </Label>
+                  <Label fx:id="labelAccionesNoEjecutadas" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-background-color: #2A3F54;" text="99" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Total de Acciones" />
+                     </tooltip>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+     
+    
+   </children>
+</fx:root>

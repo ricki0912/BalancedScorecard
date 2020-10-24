@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root id="togleButtonFoto" alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" text="ToggleButton" type="ToggleButton" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <Circle id="circleFoto" fx:id="circleFoto" fill="DODGERBLUE" radius="20.0" stroke="#1c1b1b00" strokeType="INSIDE" />
+   </graphic>
+   <font>
+      <Font name="Arial" size="13.0" />
+   </font>
+   <toggleGroup>
+      <ToggleGroup fx:id="personal" />
+   </toggleGroup>
+</fx:root>

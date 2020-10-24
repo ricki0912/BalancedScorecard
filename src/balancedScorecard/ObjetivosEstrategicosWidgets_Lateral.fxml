@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="anchorPanePanelPrincipal" prefHeight="179.0" prefWidth="306.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchorPaneNombrePerspectiva" layoutX="26.0" layoutY="-10.0" prefHeight="179.0" prefWidth="49.0" style="-fx-background-color: #00C0EF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="labelNombrePerspectiva" alignment="CENTER" contentDisplay="CENTER" layoutX="-65.0" layoutY="65.0" prefHeight="50.0" prefWidth="179.0" rotate="-90.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva Cliente" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="-65.0" AnchorPane.rightAnchor="-65.0" AnchorPane.topAnchor="65.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelObjetivoEstrategico" alignment="CENTER" layoutX="50.0" prefHeight="173.0" prefWidth="253.0" text="Label" textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

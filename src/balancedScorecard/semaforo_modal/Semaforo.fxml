@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.semaforo_modal.Semaforo_modal">
+   <children>
+      <AnchorPane id="anchorPaneModalNuevoPersonal" layoutX="6.0" layoutY="14.0" prefHeight="666.0" prefWidth="1333.0" stylesheets="@semaforo_modal.css">
+         <children>
+            <AnchorPane fx:id="anchorPanecontenedorSemaforo" layoutX="14.0" layoutY="-7.0" prefHeight="666.0" prefWidth="1333.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="jFXButtonAtras" prefHeight="86.0" prefWidth="127.0" text=".">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#b5b5b5" glyphName="CHEVRON_LEFT" opacity="0.2" size="90" textAlignment="CENTER" wrappingWidth="64.28571319580078">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </FontAwesomeIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="jFXButtonDelante" prefHeight="86.0" prefWidth="127.0" text=".">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#b5b5b5" glyphName="CHEVRON_RIGHT" opacity="0.2" size="90" textAlignment="CENTER" wrappingWidth="64.28571319580078">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Label fx:id="labelPagination" prefHeight="27.0" prefWidth="73.0" text="Label" textFill="#6c4b9a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="buttonClose" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="23.0" text="." AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#686868" glyphName="CLOSE" opacity="0.48" size="18" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

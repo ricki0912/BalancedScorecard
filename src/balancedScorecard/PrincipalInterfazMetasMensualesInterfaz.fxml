@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.PrincipalInterfazMetasMensualesControler">
+     <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="30.0" prefWidth="373.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Logros Mensuales" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+                     <items>
+                        <ScrollPane fx:id="scrollPaneIndicadores" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" vbarPolicy="NEVER">
+                           <content>
+                              <BorderPane fx:id="borderPaneIndicadores" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="scrollPaneMetas" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS">
+                           <content>
+                              <BorderPane fx:id="borderPaneMetas" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </ScrollPane>
+                     </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+      <JFXDatePicker fx:id="datePickerFecha" layoutX="964.0" layoutY="20.0" promptText="8/11/2017" showWeekNumbers="true" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="969.0" layoutY="19.0" text="Fecha:" textFill="#009688" AnchorPane.rightAnchor="196.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>

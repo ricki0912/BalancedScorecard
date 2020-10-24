@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="711.0" stylesheets="@perfilInterfaz.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="perfil.PerfilControler">
+   <top>
+      <BorderPane prefHeight="50.0" prefWidth="711.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label id="labelOpcionSeleccionada" fx:id="labelOpcionSeleccionada" text="Label" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <HBox prefHeight="64.0" prefWidth="73.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ToggleButton fx:id="toggleButtonCuenta" mnemonicParsing="false" selected="true" text="Cuenta">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="hola" />
+                     </toggleGroup>
+                  </ToggleButton>
+               </children>
+            </HBox>
+         </right>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane fx:id="borderPane_ventanaInterna_arcPerm" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></BorderPane>
+   </center>
+</BorderPane>

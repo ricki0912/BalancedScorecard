@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balancedScorecard.indicadores.Indicadores_controler">
+   <children>
+      <AnchorPane id="anchorPaneModalNuevoPersonal" layoutX="12.0" layoutY="12.0" prefHeight="499.0" prefWidth="618.0" stylesheets="@indicadores_Interfaz.css">
+         <children>
+            <JFXTabPane layoutX="211.0" layoutY="153.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab text="Indicador">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="558.0" style="-fx-background-color: #f4f6f8;">
+                           <children>
+                              <JFXTextField fx:id="jfxTextFieldEspecifiqueIndicador" labelFloat="true" layoutX="36.0" layoutY="24.0" maxWidth="555.0" minWidth="555.0" prefHeight="32.0" prefWidth="555.0" promptText="Especifique Indicador">
+                                 <font>
+                                    <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField fx:id="jfxTextFieldFormula" labelFloat="true" layoutX="36.0" layoutY="83.0" maxWidth="555.0" minWidth="401.0" prefHeight="32.0" prefWidth="401.0" promptText="Especifique Formula que se utilizara para medir el Indicador ">
+                                 <font>
+                                    <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField fx:id="jfxTextFieldResponsables" labelFloat="true" layoutX="37.0" layoutY="306.0" maxWidth="555.0" minWidth="555.0" prefHeight="32.0" prefWidth="555.0" promptText="Especifique Responsable(s)">
+                                 <font>
+                                    <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                 </font></JFXTextField>
+                              <Label layoutX="36.0" layoutY="130.0" prefHeight="24.0" prefWidth="126.0" text="Rango de Valores" textFill="#4d4d4d" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <Label layoutX="351.0" layoutY="133.0" prefHeight="17.0" prefWidth="109.0" text="Grafica" textFill="#4d4d4d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <GridPane layoutX="36.0" layoutY="158.0" prefHeight="103.0" prefWidth="261.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="94.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="80.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="75.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                       <bottom>
+                                          <JFXTextField fx:id="jfxTextFieldPeligroBase" focusColor="#c20000" maxWidth="555.0" minWidth="78.0" prefHeight="18.0" prefWidth="98.0" promptText="Peligro base" unFocusColor="#c20000" BorderPane.alignment="CENTER">
+                                             <font>
+                                                <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                             </font></JFXTextField>
+                                       </bottom>
+                                    </BorderPane>
+                                    <JFXTextField fx:id="jfxTextFieldPrecauciónBase" editable="false" focusColor="#ffa602" maxWidth="555.0" minWidth="58.0" prefHeight="32.0" prefWidth="86.0" promptText="Precaución Base" unFocusColor="#ffa602" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="jfxTextFieldPrecaucionFinal" focusColor="#fffa2b" maxWidth="555.0" minWidth="58.0" prefHeight="32.0" prefWidth="77.0" promptText="Precaución " unFocusColor="#fffa2b" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="jfxTextFieldMetaBase" editable="false" focusColor="#b7ff1c" maxWidth="555.0" minWidth="75.0" prefHeight="32.0" prefWidth="84.0" promptText="Meta Base" unFocusColor="#b7ff1c" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="jfxTextFieldMetaFinal" focusColor="#24c907" maxWidth="555.0" minWidth="75.0" prefHeight="32.0" prefWidth="76.0" promptText="Meta Final" unFocusColor="#24c907" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                       </font></JFXTextField>
+                                    <Label fx:id="labelCondicionPeligro" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="89.0" text="f(x)" textAlignment="CENTER" textFill="#ff0404" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelCondicionPrecaucion" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="100.0" text="f(x)" textAlignment="CENTER" textFill="#f8ae00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelCondicionMeta" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="106.0" text="f(x)" textAlignment="CENTER" textFill="#24c907" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="jfxTextFieldPeligroFinal" focusColor="#e20202" maxWidth="555.0" minWidth="78.0" prefHeight="5.0" prefWidth="99.0" promptText="Peligro" unFocusColor="#e20202e3" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                       </font></JFXTextField>
+                                 </children>
+                              </GridPane>
+                              <JFXTextField fx:id="jfxTextFieldMeta" labelFloat="true" layoutX="531.0" layoutY="83.0" maxWidth="555.0" minWidth="61.0" prefHeight="32.0" prefWidth="61.0" promptText="Meta">
+                                 <font>
+                                    <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                 </font></JFXTextField>
+                              <Button id="buttonCancelar" fx:id="buttonCancelar" layoutX="444.0" layoutY="411.0" mnemonicParsing="false" text="Cancelar">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button id="buttonGuardar" fx:id="buttonGuardar" layoutX="529.0" layoutY="411.0" mnemonicParsing="false" text="Guardar">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label id="labelInformacion" fx:id="labelInformacion" layoutX="12.0" layoutY="356.0" prefHeight="35.0" prefWidth="596.0">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="jfxTextFieldValorActual" labelFloat="true" layoutX="447.0" layoutY="83.0" maxWidth="555.0" minWidth="75.0" prefHeight="32.0" prefWidth="75.0" promptText="Valor Actual ">
+                                 <font>
+                                    <Font name="Arial Narrow Bold Italic" size="14.0" />
+                                 </font></JFXTextField>
+                              <AnchorPane layoutX="354.0" layoutY="158.0" prefHeight="130.0" prefWidth="210.0">
+                                 <children>
+                                    <Arc fx:id="ArcMetaAzul" fill="DODGERBLUE" layoutX="117.0" layoutY="122.0" length="180.0" radiusX="120.0" radiusY="120.0" startAngle="-0.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                    <Arc fx:id="ArcMetaVerde" fill="#39c942" layoutX="117.0" layoutY="122.0" length="135.0" radiusX="120.0" radiusY="120.0" startAngle="45.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                    <Arc fx:id="ArcMetaPrecaucion" fill="#e3ab10" layoutX="117.0" layoutY="122.0" length="90.0" radiusX="120.0" radiusY="120.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                    <Arc fx:id="ArcMetaPeligro" fill="#ff0202" layoutX="117.0" layoutY="122.0" length="45.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="120.0" radiusY="120.0" startAngle="135.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                    <Arc fill="WHITE" layoutX="117.0" layoutY="122.0" length="180.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="60.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                    <Label fx:id="labelLogroAlcanzado" alignment="CENTER" layoutX="81.0" layoutY="74.0" prefHeight="37.0" prefWidth="75.0" text="123.0" textFill="#252525">
+                                       <font>
+                                          <Font name="System Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Arc fx:id="ArcFlechaIndicador" fill="#8a7490" layoutX="117.0" layoutY="122.0" length="2.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="115.0" radiusY="115.0" startAngle="71.0" stroke="#4c3361" strokeType="INSIDE" strokeWidth="2.0" type="ROUND" />
+                                    <Arc fill="#5c3086" layoutX="117.0" layoutY="122.0" length="360.0" radiusX="7.0" radiusY="7.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="labelValorMinimoPeligro" layoutX="364.0" layoutY="280.0" />
+                              <Label fx:id="labelValorMaximo" layoutX="547.0" layoutY="279.0" />
+                              <Separator layoutX="37.0" layoutY="152.0" prefHeight="3.0" prefWidth="256.0" />
+                              <Separator layoutX="351.0" layoutY="152.0" prefHeight="2.0" prefWidth="249.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <JFXButton fx:id="buttonClose" alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="4.0" text=".">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="18" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="899.0" stylesheets="@cuentaInterfaz.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="perfil.cuenta.CuentaControler">
+   <center>
+      <ScrollPane id="scrollPaneDatosUsuario" fx:id="scrollPaneDatosUsuario" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <HBox alignment="CENTER" prefHeight="509.0" prefWidth="711.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="531.0" prefWidth="543.0">
+                     <children>
+                        <AnchorPane prefHeight="496.0" prefWidth="543.0" style="-fx-border-color: ;">
+                  <children>
+                  <Label layoutX="37.0" layoutY="6.0" text="DNI">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <TextField id="textFieldDNI" fx:id="textFieldDNI" editable="false" layoutX="37.0" layoutY="29.0" prefHeight="25.0" prefWidth="258.0" />
+                  <Label layoutX="39.0" layoutY="68.0" text="Nombre">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <TextField id="textFieldNombre" fx:id="textFieldNombre" layoutX="37.0" layoutY="94.0" prefHeight="25.0" prefWidth="258.0" />
+                  <Label layoutX="37.0" layoutY="132.0" text="Apellido Paterno">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <TextField id="textFieldApellPaterno" fx:id="textFieldApellPaterno" layoutX="35.0" layoutY="154.0" prefHeight="25.0" prefWidth="258.0" />
+                  <Label layoutX="37.0" layoutY="197.0" text="Apellido Materno">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <TextField id="textFieldApellMaterno" fx:id="textFieldApellMaterno" layoutX="35.0" layoutY="218.0" prefHeight="25.0" prefWidth="258.0" />
+                  <TextField id="textFieldCargo" fx:id="textFieldCargo" layoutX="37.0" layoutY="276.0" prefHeight="25.0" prefWidth="258.0" />
+                  <Hyperlink id="hyperlinkCambiarFoto" fx:id="hyperlinkCambiarFoto" alignment="CENTER" contentDisplay="CENTER" layoutX="322.0" layoutY="226.0" prefHeight="23.0" prefWidth="178.0" text="Cambiar foto" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Hyperlink>
+                  <Button id="buttonModificar" fx:id="buttonModificar" layoutX="433.0" layoutY="434.0" mnemonicParsing="false" text="Modificar" />
+                  <Label id="labelMostrarInformacion" fx:id="labelMostrarInformacion" layoutX="38.0" layoutY="467.0" prefHeight="17.0" prefWidth="467.0" textFill="#e40a0a">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <Label layoutX="39.0" layoutY="256.0" text="Cargo">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                  <Label layoutX="325.0" layoutY="6.0" text="Foto">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                              <CheckBox id="checkBoxEstado" fx:id="checkBoxEstado" layoutX="322.0" layoutY="290.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="179.0" text="Activo">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></CheckBox>
+                              <ImageView id="imageViewFoto" fx:id="imageViewFoto" fitHeight="178.0" fitWidth="178.0" layoutX="322.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="328.0" layoutY="260.0" text="Estado">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                              <Label layoutX="39.0" layoutY="321.0" text="Creado por">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                              <TextField id="textFielCreadoPor" fx:id="textFieldCreadoPor" editable="false" layoutX="37.0" layoutY="339.0" prefHeight="25.0" prefWidth="258.0" />
+                              <Hyperlink id="hyperlinkCambiarContrasena" fx:id="hyperlinkCambiarContrasena" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="321.0" prefHeight="23.0" prefWidth="178.0" text="Cambiar Contraseña" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Hyperlink>
+                              <TextField id="textFieldModificadoPor" fx:id="textFieldModificadoPor" editable="false" layoutX="37.0" layoutY="397.0" prefHeight="25.0" prefWidth="258.0" />
+                              <Label layoutX="39.0" layoutY="380.0" text="Modificado  por">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                  </children>
+                  </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <BorderPane id="borderPanelDatosUsuario" fx:id="borderPanelDatosUsuario" prefHeight="25.0" prefWidth="1050.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label text="Datos de Usuario" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+         </left>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </BorderPane>
+   </top>
+</BorderPane>

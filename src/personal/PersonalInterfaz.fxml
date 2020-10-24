@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="711.0" stylesheets="@personalInterfaz.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.PersonalControler">
+   <top>
+      <BorderPane prefHeight="50.0" prefWidth="711.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label id="labelOpcionSeleccionada" fx:id="labelOpcionSeleccionada" text="Label" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <HBox prefHeight="64.0" prefWidth="224.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ToggleButton id="toggleButtonVerPersonal" fx:id="toggleButtonVerPersonal" mnemonicParsing="false" selected="true" text="Ver Personal">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="hola" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton id="toggleButtonAnadirPersonal" fx:id="toggleButtonAnadirPersonal" mnemonicParsing="false" text="Añadir Personal" />
+               </children>
+            </HBox>
+         </right>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane fx:id="borderPane_ventanaInterna_arcPerm" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></BorderPane>
+   </center>
+</BorderPane>

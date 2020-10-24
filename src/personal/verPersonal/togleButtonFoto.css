@@ -1,0 +1,17 @@
+#togleButtonFoto{
+	
+	-fx-cursor:hand;
+	-fx-background-color:  white;
+	-fx-border-width: 0px 0px 0px 0px;
+}
+#togleButtonFoto:hover{
+	-fx-background-color:   #7387A8;
+	-fx-text-fill: white;
+
+}
+
+#togleButtonFoto:selected{
+	-fx-text-fill: white;
+	-fx-background-color:  #aaaaaa;
+
+}

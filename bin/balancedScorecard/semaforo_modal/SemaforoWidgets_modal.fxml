@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1333.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="40.0" layoutY="352.0" prefHeight="14.0" prefWidth="357.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;" visible="false" AnchorPane.leftAnchor="40.0">
+         <children>
+            <Label fx:id="labelObjetivo" alignment="TOP_CENTER" layoutX="5.0" layoutY="2.0" prefHeight="14.0" prefWidth="345.0" text="LabelF AKLFJLKAS DJFLKÑSAJFLÑKSADJF LÑASJFÑLSDKJFÑLSDJFÑDSFDSÑJFÑ" textAlignment="JUSTIFY" textFill="#405e90" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="403.0" layoutY="352.0" prefHeight="17.0" prefWidth="366.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;" visible="false" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Label fx:id="labelAccion" alignment="TOP_LEFT" layoutX="7.0" layoutY="6.0" prefHeight="19.0" prefWidth="357.0" text="LabelF AKLFJLKAS DJFLKÑSAJFLÑKSADJF LÑASJFÑLSDKJFÑLSDJFÑDSFDSÑJFÑ" textAlignment="JUSTIFY" textFill="#405e90" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="60.0" layoutY="10.0" prefHeight="646.0" prefWidth="803.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <LineChart fx:id="lineChartMetas" layoutX="3.0" layoutY="6.0" prefHeight="354.0" prefWidth="454.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="5.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="456.0" layoutY="14.0" prefHeight="646.0" prefWidth="475.0" style="-fx-border-color: #eeeeee; -fx-background-color: #F9F9F9; -fx-border-radius: 3; -fx-background-radius: 3;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="12.0" prefHeight="272.0" prefWidth="455.0" AnchorPane.bottomAnchor="363.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+               <children>
+                  <Arc fx:id="ArcMetaAzul" fill="DODGERBLUE" layoutX="228.0" layoutY="258.0" length="180.0" radiusX="225.0" radiusY="225.0" startAngle="-0.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="ArcMetaVerde" fill="#39c942" layoutX="228.0" layoutY="258.0" length="135.0" radiusX="225.0" radiusY="225.0" startAngle="45.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="ArcMetaPrecaucion" fill="#e3ab10" layoutX="228.0" layoutY="258.0" length="90.0" radiusX="225.0" radiusY="225.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Arc fx:id="ArcMetaPeligro" fill="#ff0202" layoutX="228.0" layoutY="258.0" length="45.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="225.0" radiusY="225.0" startAngle="135.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Arc fill="WHITE" layoutX="228.0" layoutY="258.0" length="180.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="100.0" radiusY="100.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Label fx:id="labelLogroAlcanzado" alignment="CENTER" layoutX="135.0" layoutY="203.0" prefHeight="44.0" prefWidth="185.0" text="100.00%" textFill="#252525">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Arc fx:id="ArcFlechaIndicador" fill="#8a7490" layoutX="228.0" layoutY="258.0" length="2.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="200.0" radiusY="200.0" startAngle="44.0" stroke="#4c3361" strokeType="INSIDE" strokeWidth="2.0" type="ROUND" />
+                  <Arc fill="#5c3086" layoutX="228.0" layoutY="258.0" length="360.0" radiusX="7.0" radiusY="7.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                  <Label fx:id="labelValorActualReloj" layoutX="14.0" layoutY="22.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="#4062a1">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label fx:id="labelIzquierdoReloj" alignment="CENTER" layoutY="223.0" prefHeight="33.0" prefWidth="124.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelderechoReloj" alignment="CENTER" layoutX="334.0" layoutY="223.0" prefHeight="33.0" prefWidth="111.0" text="Label" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="1.0" prefHeight="26.0" prefWidth="97.0" text="Meta:" textFill="#4062a1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="282.0" prefHeight="26.0" prefWidth="163.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="282.0">
+               <children>
+                  <Label fx:id="labelFechaContenido" alignment="CENTER" text="Mes" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="32.0" layoutY="314.0" prefHeight="4.0" prefWidth="160.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" />
+            <VBox layoutX="15.0" layoutY="139.0" prefHeight="318.0" prefWidth="449.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="447.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="CALCULATOR" size="16" />
+                        <Label text="Formula:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelFormulaContenido" alignment="BASELINE_LEFT" prefHeight="45.0" prefWidth="353.0" text="Labelasfasd fasdfsadfasdfasdfadsfsda fsdafsdfadsfsadfdf" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="163.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="EYE" size="16" />
+                        <Label prefHeight="21.0" prefWidth="108.0" text="Valor Actual: ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelValorActualContenido" prefHeight="21.0" prefWidth="336.0" text="Label">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="163.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView fill="#ff0202" glyphName="BOMB" size="16" />
+                        <Label text="Peligro:" textFill="#ff0202">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelPeligroContenido" prefHeight="19.0" prefWidth="365.0" text="Label" textFill="#ff0202">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="163.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView fill="#e28712" glyphName="WARNING" size="16" />
+                        <Label prefHeight="21.0" prefWidth="119.0" text="Precaución:" textFill="#e37512">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelPrecaucionContenido" prefHeight="19.0" prefWidth="365.0" text="Label" textFill="#e28712">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="163.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView fill="#39c942" glyphName="LINE_CHART" size="16" />
+                        <Label prefHeight="21.0" prefWidth="74.0" text="Meta:" textFill="#39c942">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelMetaContenido" prefHeight="19.0" prefWidth="396.0" text="Label" textFill="#39c942">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="447.0" spacing="5.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="GROUP" size="16" />
+                        <Label prefHeight="21.0" prefWidth="137.0" text="Responsable(s):">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelResponsablesContenido" prefHeight="43.0" prefWidth="306.0" text="Label adsf asdfasdfsadf sdaf asdf asdf asdf sdaf dsfa " wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelPerspectiva" layoutX="-302.0" layoutY="317.0" prefHeight="33.0" prefWidth="646.0" rotate="-90.0" style="-fx-background-color: red; -fx-border-radius: 3; -fx-background-radius: 3;" text="Label" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</fx:root>

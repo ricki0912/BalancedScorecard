@@ -1,0 +1,9 @@
+color cmi
+
+clientes  #009ABF
+aprendisaje y conociento  #C37D0E  
+
+
+procesos internos #008548
+
+financiero #5b0067

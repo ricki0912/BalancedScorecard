@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="hBoxAcciones" prefHeight="179.0" spacing="16.0" type="HBox" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane opacity="0.93" prefHeight="179.0" prefWidth="306.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+         <children>
+            <AnchorPane layoutX="26.0" layoutY="-10.0" prefHeight="179.0" prefWidth="49.0" style="-fx-background-color: #00C0EF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-65.0" layoutY="65.0" prefHeight="50.0" prefWidth="179.0" rotate="-90.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Perspectiva Cliente" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="-65.0" AnchorPane.rightAnchor="-65.0" AnchorPane.topAnchor="65.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="277.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+               <children>
+                  <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #00C0EF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="15.0" prefWidth="213.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Nueva Acción Estrategica" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER" />
+                           </left>
+                           <right>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="53.0" spacing="3.0" BorderPane.alignment="CENTER" />
+                           </right>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton contentDisplay="CENTER" layoutX="86.0" layoutY="63.0" prefHeight="76.0" prefWidth="106.0" text=".">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fill="#00c0ef" glyphName="PLUS_CIRCLE" layoutX="109.0" layoutY="110.0" size="70" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

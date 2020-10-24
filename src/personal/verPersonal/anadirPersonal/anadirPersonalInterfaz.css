@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchorPaneModalNuevoPersonal{
+	-fx-background-color: #eeeeee;
+	-fx-background-radius:3;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.9), 15, 0, 3, 3);
+}
+
+#borderPaneNuevoPersonal{
+	-fx-background-color:  #1080e5;
+	 -fx-background-radius: 3 3 0 0;
+  	 -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0.0,0.7), 2, 0, 0, 0);
+	
+}
+
+#buttonClose{
+	-fx-background-color:  #1080e5;
+	 -fx-font: 12px "Cambria";
+}
+
+#buttonClose:hover{
+	-fx-font: 15px "Cambria";
+	-fx-cursor: hand;
+}
+
+
+#buttonCancelar{
+	-fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+	-fx-background-color: f44336;
+	-fx-text-fill: #FFFFFF;
+	
+}
+
+#buttonCancelar:hover{
+		-fx-cursor: hand;
+		-fx-background-color: #da190b;
+}
+#buttonGuardar:hover{
+	-fx-cursor: hand; 
+	-fx-background-color: #0b7dda
+}
+#buttonGuardar{
+	-fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+	-fx-background-color: #2196F3;
+	-fx-text-fill: #FFFFFF;
+}

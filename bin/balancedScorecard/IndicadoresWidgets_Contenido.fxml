@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="160.0" prefWidth="376.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchorPanetituloIndicador" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #00C0EF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <Label fx:id="labelTituloIndicador" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="76.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #F0F0F0;" text="Indicador" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <HBox fx:id="hBoxOpcionesIndicador" alignment="CENTER" prefHeight="30.0" prefWidth="271.0" spacing="3.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton fx:id="jFXButtonResetearLogros" ellipsisString="" prefHeight="29.0" prefWidth="136.0" text="Resetear Logros" textAlignment="CENTER" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="16" textAlignment="CENTER" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="jFXButtonMetas" ellipsisString="" prefHeight="25.0" prefWidth="94.0" text="Logros" textAlignment="CENTER" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" size="16" textAlignment="CENTER" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="jFXButtonEditar" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" text="." textAlignment="CENTER">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="16" textAlignment="CENTER" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="jFXButtonEliminar" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" text="." textAlignment="CENTER">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="16" textAlignment="CENTER" />
+                           </graphic>
+                        </JFXButton>
+                     </children></HBox>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="21.0" layoutY="-20.0" prefHeight="124.0" prefWidth="160.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="33.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="124.0" prefWidth="167.0" spacing="3.0">
+               <children>
+                  <Label fx:id="labelIndicadorIndicador" alignment="CENTER" prefHeight="101.0" prefWidth="177.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: black;" text="This is dang jlk kj lkj j lkñ jlñkj ñl jñj ñlj er reminder" textAlignment="JUSTIFY" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator layoutX="166.0" layoutY="30.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="30.0" />
+      <VBox layoutX="170.0" layoutY="33.0" prefHeight="124.0" prefWidth="199.0" AnchorPane.bottomAnchor="3.0" AnchorPane.topAnchor="33.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView glyphName="CALCULATOR" size="13" />
+                  <Label prefHeight="17.0" prefWidth="55.0" text="Formula:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelFormulaContendido" prefHeight="17.0" prefWidth="122.0" text="Formula:">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView glyphName="EYE" size="13" />
+                  <Label prefHeight="17.0" prefWidth="85.0" text="Valor Actual :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelValorActualContenido" prefHeight="17.0" prefWidth="97.0" text="Formula:">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="160.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView fill="#ff0202" glyphName="BOMB" size="13" />
+                  <Label prefHeight="17.0" prefWidth="49.0" text="Peligro:" textFill="#ff0202">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelPeligroContendido" prefHeight="17.0" prefWidth="131.0" text="Formula:" textFill="#ff0202">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView fill="#e3ab10" glyphName="WARNING" size="13" />
+                  <Label prefHeight="17.0" prefWidth="66.0" text="Precaución:" textFill="#e3ab10">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelPrecaucionContendido" prefHeight="17.0" prefWidth="108.0" text="Formula:" textFill="#e3ab10">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="199.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView fill="#39c942" glyphName="PAPER_PLANE" size="13" />
+                  <Label prefHeight="17.0" prefWidth="39.0" text="Meta:" textFill="#39c942">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelMetaContendido" prefHeight="17.0" prefWidth="137.0" text="Formula:" textFill="#39c942">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="160.0" spacing="3.0">
+               <children>
+                  <FontAwesomeIconView glyphName="GROUP" size="13" />
+                  <Label prefHeight="17.0" prefWidth="91.0" text="Responsable(s):">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelResponsablesContendido" prefHeight="17.0" prefWidth="84.0" text="Formula:">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

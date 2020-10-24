@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#labelOpcionSeleccionada{
+	-fx-font-weight: 700;
+	-fx-font-size: 24px;
+	-fx-text-fill: #7387A8;
+}
+
+.toggle-button{
+	
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color:  #7387A8;
+	-fx-border-radius: 0px;
+	-fx-background-radius: 0px;
+	-fx-background-color: transparent ;
+	-fx-cursor: hand;
+	-fx-padding: 34px 15px 10px 15px;
+	-fx-font-weight:700;
+	-fx-font-size: 12px;
+	-fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	-fx-text-fill: #7387A8;
+}
+.toggle-button:hover{
+	-fx-border-width: 0px 0px 3px 0px;
+	
+}
+.toggle-button:selected{
+	-fx-background-color: #7387A8;
+	-fx-border-color: WHITE;
+	-fx-border-width: 0.0px 0px 3px 0px;
+	-fx-text-fill: white;
+}

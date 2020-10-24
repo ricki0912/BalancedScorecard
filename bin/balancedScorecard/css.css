@@ -1,0 +1,11 @@
+
+
+.progress-bar {
+
+ -fx-box-border: goldenrod;
+-fx-accent: green;  }
+
+/* .progress-bar > .track {
+   -fx-text-box-border: forestgreen;
+  -fx-control-inner-background: #FFA3A3;
+}*/
